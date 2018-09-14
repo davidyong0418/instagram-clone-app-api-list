@@ -1,0 +1,2143 @@
+{
+	"info": {
+		"_postman_id": "778412e6-0cb4-4803-9008-55cf9734a3c7",
+		"name": "Necked App api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "Change profile pic",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7511dc79c8331fc0001934",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "cover_pic",
+									"type": "text"
+								},
+								{
+									"key": "upload_file",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/change_profile_pic",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"change_profile_pic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7511dc79c8331fc0001934ee",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/get_userinfo",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"get_userinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "fullstackdev0418@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/forgot_password",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"forgot_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "192.168.0.140/api/signin?username=benabbate1023@gmail.com&password=qwe",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"signin"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "benabbate1023@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "qwe"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://192.168.0.140/api/signup?first_name=dasf&last_name=vaasdflue&username=vasfalue&email=goldenjoaoviegas0dddddddddddd4ss18@gmail.com&password=vasdflue",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"signup"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "dasf"
+								},
+								{
+									"key": "last_name",
+									"value": "vaasdflue"
+								},
+								{
+									"key": "username",
+									"value": "vasfalue"
+								},
+								{
+									"key": "email",
+									"value": "goldenjoaoviegas0dddddddddddd4ss18@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "vasdflue"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://192.168.0.140/api/all_users?user_id=ddd",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"all_users"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "ddd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Profile Edit(save profile edit)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7511dc79c8331fc0001934",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "benabbate1023@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "saf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/profile_edit",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"profile_edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7511dc79c8331fc0001934",
+									"type": "text"
+								},
+								{
+									"key": "current_password",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "reset",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/reset_password",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"reset_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category",
+									"value": "sport",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/add_category",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"add_category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "192.168.0.140/api/category_list",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"category_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Own get posts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b73eebc79c833198c005993",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/own_get_posts",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"own_get_posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Like",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b753d9e79c83308180022e3",
+									"type": "text"
+								},
+								{
+									"key": "media_id",
+									"value": "5b75596b79c833231c005573",
+									"type": "text"
+								},
+								{
+									"key": "like_state",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/user_like",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"user_like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Unlike",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b753d9e79c83308180022e3",
+									"type": "text"
+								},
+								{
+									"key": "media_id",
+									"value": "5b75596b79c833231c005573",
+									"type": "text"
+								},
+								{
+									"key": "like_state",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/user_like",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"user_like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SignUp Confirmation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "confirm_str",
+									"value": "oqvyAF",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/register_confirm",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"register_confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get UserInfo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b753d9e79c83308180022e3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/get_userinfo",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"get_userinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Own Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b753d9e79c83308180022e3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/get_own_post",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"get_own_post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get hash tags",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tag",
+									"value": "#er",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/get_post_by_tag",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"get_post_by_tag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tags",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b76398e79c8330260001119",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/get_tags",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"get_tags"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Live",
+			"item": [
+				{
+					"name": "Signup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://18.209.93.188/api/signup?first_name=Test name&last_name=Test mame&username=fullstackdev&email=fullstack0421@gmail.com&password=test",
+							"protocol": "http",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"signup"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "Test name"
+								},
+								{
+									"key": "last_name",
+									"value": "Test mame"
+								},
+								{
+									"key": "username",
+									"value": "fullstackdev"
+								},
+								{
+									"key": "email",
+									"value": "fullstack0421@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Confirmation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "confirm_str",
+									"value": "jhGiZV",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/register_confirm",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"register_confirm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "18.209.93.188/api/signin?username=fullstack0421@gmail.com&password=dm1x1EiK",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"signin"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "fullstack0421@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "dm1x1EiK"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								},
+								{
+									"key": "current_password",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "reset-test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/reset_password",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"reset_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "fullstack0421@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/forgot_password",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"forgot_password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "18.209.93.188/api/all_users?user_id=5b7681ee871b1e5d7745a552",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"all_users"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change profile pic",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "cover_pic",
+									"type": "text"
+								},
+								{
+									"key": "upload_file",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/change_profile_pic",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"change_profile_pic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload image",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "first_name",
+								"value": "adsf",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "last_name",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "image",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "5b7511dc79c8331fc0001934",
+									"type": "text"
+								},
+								{
+									"key": "upload_file",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://18.209.93.188/api/upload_media",
+							"protocol": "http",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"upload_media"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Video",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "enctype",
+								"value": "multipart/form-data"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "video",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								},
+								{
+									"key": "upload_file",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/upload_media",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"upload_media"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload text",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "this is test",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "sport",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/upload_text",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"upload_text"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/get_userinfo",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"get_userinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Profile Edit(save profile edit)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "fullstack0421@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "fullstackdev",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/profile_edit",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"profile_edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search user(uncomplete)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								},
+								{
+									"key": "pattern",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/search_user",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"search_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Following",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								},
+								{
+									"key": "following_id",
+									"value": "5b753e9d79c83308180022e4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/following",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"following"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Following",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/get_following",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"get_following"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get followers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/get_followers",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"get_followers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category",
+									"value": "sport",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/add_category",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"add_category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "18.209.93.188/api/category_list",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"category_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Own get posts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/own_get_posts",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"own_get_posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Like",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								},
+								{
+									"key": "media_id",
+									"value": "5b75596b79c833231c005573",
+									"type": "text"
+								},
+								{
+									"key": "like_state",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/user_like",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"user_like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Unlike",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								},
+								{
+									"key": "media_id",
+									"value": "5b75596b79c833231c005573",
+									"type": "text"
+								},
+								{
+									"key": "like_state",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/user_like",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"user_like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Own Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/get_own_post",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"get_own_post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Post Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "media_id",
+									"value": "5b75596b79c833231c005573",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/get_post_comment",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"get_post_comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tags",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tag",
+									"value": "#er",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "#er",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "18.209.93.188/api/get_post_by_tag",
+							"host": [
+								"18",
+								"209",
+								"93",
+								"188"
+							],
+							"path": [
+								"api",
+								"get_post_by_tag"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "09-02",
+			"item": [
+				{
+					"name": "Upload image",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "first_name",
+								"value": "adsf",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "last_name",
+									"value": "test",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "image",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "5b7511dc79c8331fc0001934",
+									"type": "text"
+								},
+								{
+									"key": "upload_file",
+									"type": "file"
+								},
+								{
+									"key": "category_id",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "caption",
+									"value": "asdfsdafjkl",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/upload_media",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"upload_media"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Video",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "enctype",
+								"value": "multipart/form-data"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "video",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "5b7511dc79c8331fc0001934",
+									"type": "text"
+								},
+								{
+									"key": "upload_file",
+									"value": "",
+									"type": "file"
+								},
+								{
+									"key": "category_id",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "caption",
+									"value": "qweqe",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/upload_media",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"upload_media"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload text",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b753d9e79c83308180022e3",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "text",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "nature",
+									"type": "text"
+								},
+								{
+									"key": "caption",
+									"value": "This is caption",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "This is a content",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/upload_text",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"upload_text"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search_user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pattern",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/search_user",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"search_user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add post comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "192.168.0.140/api/add_post_comment",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"add_post_comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b77f9d879c83323c4001587",
+									"type": "text"
+								},
+								{
+									"key": "init",
+									"value": "asdfsf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/get_all_posts?user_id=5b77f9d879c83323c4001587&init=sdafasda&after&category&type",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"get_all_posts"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5b77f9d879c83323c4001587"
+								},
+								{
+									"key": "init",
+									"value": "sdafasda"
+								},
+								{
+									"key": "after",
+									"value": null
+								},
+								{
+									"key": "category",
+									"value": null
+								},
+								{
+									"key": "type",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Post Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "media_id",
+									"value": "5b9252ee79c8330ba80050fe",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/get_post_comment",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"get_post_comment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Userinfo and Post data(top and recent)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b8eb54dbe0fef1d94da4c4f",
+									"type": "text"
+								},
+								{
+									"key": "selected_user_id",
+									"value": "5b8380da79c8331a80000632",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/get_userinfo_and_postdata",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"get_userinfo_and_postdata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get followers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b753d9e79c83308180022e3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/get_followers",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"get_followers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Following",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b77f9d879c83323c4001587",
+									"type": "text"
+								},
+								{
+									"key": "following_id",
+									"value": "5b8eb538be0fef1d94da4c4e",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/following",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"following"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unfollowing",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b753d9e79c83308180022e3",
+									"type": "text"
+								},
+								{
+									"key": "following_id",
+									"value": "5b753e9d79c83308180022e4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/following",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"following"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Following",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b7681ee871b1e5d7745a552",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/get_following",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"get_following"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Top users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "5b76398e79c8330260001119",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/top_users",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"top_users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User dislike",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "media_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "dislike_state",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/user_dislike",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"user_dislike"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-sms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone_number",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "192.168.0.140/api/send-sms",
+							"host": [
+								"192",
+								"168",
+								"0",
+								"140"
+							],
+							"path": [
+								"api",
+								"send-sms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
